@@ -10,8 +10,6 @@ const urlDatabase = {
 };
 
 
-
-
 app.get("/urls.json", (req, res) => {
     res.json(urlDatabase);
   });
@@ -21,7 +19,7 @@ app.get("/", (req, res) => {
   res.send("Hello!");
 });
 
-app.get("/hello", (req, res) => {
+app.get("/hello wooo", (req, res) => {
     res.send("<html><body>Hello <b>World</b></body></html>\n");
   });
 
@@ -35,10 +33,6 @@ app.get("/hello", (req, res) => {
    });
 
 
-
-
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}!`);
 });
-
-
